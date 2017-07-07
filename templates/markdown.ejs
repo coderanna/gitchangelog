@@ -1,7 +1,7 @@
 <% commits.forEach(function (commit) { %>
 * __<%= commit.title %>__
 
-    [<%= commit.authorName %>](mailto:<%= commit.authorEmail %>) - <%= commit.committerDate %>
-    
+    [<%= commit.authorName %>][sha:<%= commit.sha1 %>](../blob/master/LICENSE)(url:<%= commit.commiturl %>)(mailto:<%= commit.authorEmail %>) - <%= commit.committerDate %>
+    [like this](http://google.com)
     <%= commit.messageLines.join("\n    ") %>
 <% }) %>

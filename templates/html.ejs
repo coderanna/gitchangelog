@@ -72,12 +72,12 @@
     <body>
     	<div class="container" role="main">
     		<div class="header title">
-				<h1>Release Notes</h1>
+				<h1>Changelog</h1>
 			</div>
 			<div class="category">
 				<% commits.forEach(function (commit) { %>
 					<p class="summary">
-						<span class="author"><%= commit.authorName %></span>
+						<span class="author"><%= commit.authorName %></span> | <a href="https://gitlab.kroger.com/digital-merchandising/cfic-ivt/commit/<%=commit.sha1 %>"><%= commit.sha1 %></a> |
 						committed on
 						<span class="date"><%= commit.committerDate %></span>
 					</p>

@@ -1,7 +1,7 @@
 {
-  "author": "ariatemplates <contact@ariatemplates.com> (http://github.com/ariatemplates)",
+  "author": "anna",
   "name": "git-release-notes",
-  "description": "Generate beautiful release notes from a git log.",
+  "description": "Generate changelog.",
   "keywords": [
     "git",
     "log",
@@ -22,21 +22,23 @@
     "date-fns": "^1.28.4",
     "debug": "^2.6.0",
     "ejs": "^2.5.5",
+    "git-public-url": "^1.0.3",
     "optimist": "^0.6.1"
   },
   "contributors": [
     {
-      "name": "Fabio Crisci",
-      "email": "fabio@ariatemplates.com",
-      "url": "https://github.com/piuccio"
+      "name": "Anna",
+      "email": " ",
+      "url": " "
     }
   ],
   "bin": "./index.js",
+  "git-release-notes": "./index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ariatemplates/git-release-notes"
+    "url": " "
   },
-  "homepage": "https://github.com/ariatemplates/git-release-notes",
+  "homepage": "https://github.com",
   "preferGlobal": true,
   "devDependencies": {
     "cross-env": "^5.0.0",

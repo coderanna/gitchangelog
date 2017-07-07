@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var argv = require("optimist").usage("git-release-notes [<options>] <since>..<until> <template>")
+var argv = require("optimist").usage("git-release-notes <template>")
 .options("f", {
 	"alias": "file"
 })
@@ -35,7 +35,7 @@ var argv = require("optimist").usage("git-release-notes [<options>] <since>..<un
 	if (argv._.length == 2) {
 		return true;
 	}
-	throw "Invalid parameters, please specify an interval and the template";
+	throw "Invalid parameters, specify an interval and the template";
 })
 .argv;
 
@@ -138,6 +138,7 @@ function postProcess(templateContent, commits) {
 			try {
 				inputData = {
 					commits: commits,
+					commiturl: commiturl,
 					range: argv._[0],
 					dateFnsFormat: dateFnsFormat,
 					debug: require("debug")("release-notes:externalscript")
